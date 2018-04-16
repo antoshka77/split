@@ -25,25 +25,15 @@ class RealizationSplit {
 
     static void funC(String file, int sizeInChars, String outputName) throws IOException {
         ArrayList<Character> chars = new ArrayList<>();
-        BufferedReader reader = null;
-        try {
-            reader = new BufferedReader(new FileReader(new File(file)));
+        try (FileReader reader = new FileReader(file)) {
             int c;
             while ((c = reader.read()) != -1) {
+
                 chars.add((char) c);
             }
-            reader.close();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        finally {
-            if (reader != null) {
-                try {
-                    reader.close();
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-            }
+        } catch (IOException ex) {
+
+            System.out.println(ex.getMessage());
         }
         int count;
         if (chars.size() % sizeInChars == 0) count = chars.size() / sizeInChars;
