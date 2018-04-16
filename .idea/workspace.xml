@@ -8,7 +8,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f4119e34-057a-4b0e-9fc3-e46d25974bf1" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../split/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../split/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../split/src/RealizationSplit.java" afterPath="$PROJECT_DIR$/../split/src/RealizationSplit.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../split/tests/RealizationSplitTest.java" afterPath="$PROJECT_DIR$/../split/tests/RealizationSplitTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/../split/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,10 +32,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RealizationSplit.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="RealizationSplit.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../split/src/RealizationSplit.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
+            <state relative-caret-position="527">
               <caret line="31" column="8" lean-forward="false" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -44,11 +44,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="input.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../split/input.txt">
+      <file leaf-file-name="RealizationSplitTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../split/tests/RealizationSplitTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="18" lean-forward="false" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
+            <state relative-caret-position="340">
+              <caret line="22" column="20" lean-forward="true" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -77,13 +77,13 @@
       <list>
         <option value="$PROJECT_DIR$/../split/src/splitParser.java" />
         <option value="$PROJECT_DIR$/../split/src/split.java" />
-        <option value="$PROJECT_DIR$/../split/tests/RealizationSplitTest.java" />
         <option value="$PROJECT_DIR$/../split/input1.txt" />
         <option value="$PROJECT_DIR$/../split/x1.txt" />
         <option value="$PROJECT_DIR$/../split/input1aa.txt" />
         <option value="$PROJECT_DIR$/../split/input.txt" />
         <option value="$PROJECT_DIR$/../split/src/Split.java" />
         <option value="$PROJECT_DIR$/../split/src/RealizationSplit.java" />
+        <option value="$PROJECT_DIR$/../split/tests/RealizationSplitTest.java" />
       </list>
     </option>
   </component>
@@ -114,6 +114,11 @@
             <path>
               <item name="split" type="b2602c69:ProjectViewProjectNode" />
               <item name="split" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="split" type="b2602c69:ProjectViewProjectNode" />
+              <item name="split" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -279,7 +284,14 @@
       <option name="project" value="LOCAL" />
       <updated>1523906495758</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="rewrite">
+      <created>1523907863466</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1523907863466</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -294,7 +306,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2665615" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14826499" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -629,14 +641,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../split/tests/RealizationSplitTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="403">
-          <caret line="35" column="5" lean-forward="false" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../split/pizda6.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -713,11 +717,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../split/src/RealizationSplit.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
+        <state relative-caret-position="527">
           <caret line="31" column="8" lean-forward="false" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../split/tests/RealizationSplitTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="22" column="20" lean-forward="true" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
+          <folding />
         </state>
       </provider>
     </entry>

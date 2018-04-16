@@ -16,19 +16,11 @@ class RealizationSplitTest {
     }
 
     @Test
-    void funConst() {
-    }
-
-    @Test
     void renameL() {
     }
 
     @Test
     void renameC() {
-    }
-
-    @Test
-    void renameConst() {
     }
 
     @Test
