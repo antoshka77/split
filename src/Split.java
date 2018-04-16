@@ -7,24 +7,24 @@ public class Split {
     @Option(name = "-o", metaVar = "ofile", required = true, usage = "Specifies the basename of output file")
     private String basicOutputName;
 
-    @Option(name = "-d", required = true, usage = "How should I name the file")
-    private String whatIsName;
+    @Option(name = "-d", usage = "How should I name the file")
+    private boolean whatIsName;
 
-    @Option(name = "-l", metaVar = "num", required = true, usage = "Indicates the size of the file in lines")
-    private String sizeInLines;
+    @Option(name = "-l", metaVar = "num", usage = "Indicates the size of the file in lines", forbids = {"-c", "-n"})
+    private int sizeInLines = -1;
 
-    @Option(name = "-c", metaVar = "num", required = true, usage = "Indicates the size of the file in characters")
-    private String sizeInChars;
+    @Option(name = "-c", metaVar = "num", usage = "Indicates the size of the file in characters", forbids = {"-l", "-n"})
+    private int sizeInChars = -1;
 
-    @Option(name = "-n", metaVar = "num", required = true, usage = "Indicates the number of files")
-    private String countFiles;
+    @Option(name = "-n", metaVar = "num", usage = "Indicates the number of files", forbids = {"-l", "-c"})
+    private int countFiles = -1;
 
     @Argument(required = true, metaVar = "InputName", usage = "Input file name")
     private String inputFile;
 
 
     public static void main(String[] args) throws IOException {
-        new Split().launch(args);
+      new Split().launch(args);
     }
 
     private void launch(String[] args) throws IOException {
@@ -40,8 +40,7 @@ public class Split {
             parser.printUsage(System.err);
         }
 
-        if ((sizeInLines != null && sizeInChars != null) || (sizeInLines != null && countFiles != null)
-                || (countFiles != null && sizeInChars != null) || (inputFile == null)) {
+        if (inputFile == null) {
             System.err.println("Incorrect argument format");
             parser.printUsage(System.err);
         } else {
@@ -51,24 +50,24 @@ public class Split {
             else if (basicOutputName == "-") ofile = inputFile;
             else ofile = basicOutputName;
 
-            if (whatIsName != null) {
-                if (sizeInLines != null) RealizationSplit.funL(inputFile, sizeInLines, ofile);
+            if (whatIsName) {
+                if (sizeInLines != -1) RealizationSplit.funL(inputFile, sizeInLines, ofile);
 
-                if (sizeInChars != null) RealizationSplit.funC(inputFile, sizeInChars, ofile);
+                if (sizeInChars != -1) RealizationSplit.funC(inputFile, sizeInChars, ofile);
 
-                if (countFiles != null) RealizationSplit.funN(inputFile, countFiles, ofile);
+                if (countFiles != -1) RealizationSplit.funN(inputFile, countFiles, ofile);
 
-                if ((sizeInChars == null) && (sizeInLines == null) && (countFiles == null))
-                    RealizationSplit.funConst(inputFile, ofile);
+                if ((sizeInChars == -1) && (sizeInLines == -1) && (countFiles == -1))
+                    RealizationSplit.funL(inputFile, 100, ofile);
             } else {
-                if (sizeInLines != null) RealizationSplit.renameL(inputFile, sizeInLines, ofile);
+                if (sizeInLines != -1) RealizationSplit.renameL(inputFile, sizeInLines, ofile);
 
-                if (sizeInChars != null) RealizationSplit.renameC(inputFile, sizeInChars, ofile);
+                if (sizeInChars != -1) RealizationSplit.renameC(inputFile, sizeInChars, ofile);
 
-                if (countFiles != null) RealizationSplit.renameN(inputFile, countFiles, ofile);
+                if (countFiles != -1) RealizationSplit.renameN(inputFile, countFiles, ofile);
 
-                if ((sizeInChars == null) && (sizeInLines == null) && (countFiles == null))
-                    RealizationSplit.renameConst(inputFile, ofile);
+                if ((sizeInChars == -1) && (sizeInLines == -1) && (countFiles == -1))
+                    RealizationSplit.renameL(inputFile, 100, ofile);
             }
         }
     }
