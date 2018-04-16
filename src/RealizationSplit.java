@@ -25,15 +25,10 @@ class RealizationSplit {
 
     static void funC(String file, int sizeInChars, String outputName) throws IOException {
         ArrayList<Character> chars = new ArrayList<>();
-        try (FileReader reader = new FileReader(file)) {
-            int c;
-            while ((c = reader.read()) != -1) {
-
-                chars.add((char) c);
-            }
-        } catch (IOException ex) {
-
-            System.out.println(ex.getMessage());
+        FileReader reader = new FileReader(file);
+        int c;
+        while ((c = reader.read()) != -1) {
+            chars.add((char) c);
         }
         int count;
         if (chars.size() % sizeInChars == 0) count = chars.size() / sizeInChars;
@@ -42,14 +37,12 @@ class RealizationSplit {
             int postfix = i + 1;
             File littleFile = new File(outputName + postfix + ".txt");
             littleFile.createNewFile();
-            if (littleFile.createNewFile()) {
-                FileWriter fw = new FileWriter(littleFile);
-                for (int n = i * sizeInChars; n < (i + 1) * sizeInChars; n++) {
-                    fw.write(chars.get(n) + "\n");
-                    if (n == chars.size() - 1) break;
-                }
-                fw.close();
+            FileWriter fw = new FileWriter(littleFile);
+            for (int n = i * sizeInChars; n < (i + 1) * sizeInChars; n++) {
+                fw.write(chars.get(n));
+                if (n == chars.size() - 1) break;
             }
+            fw.close();
         }
     }
 
