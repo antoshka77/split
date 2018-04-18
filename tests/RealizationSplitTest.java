@@ -1,5 +1,6 @@
 import org.junit.jupiter.api.Test;
 
+import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.Scanner;
@@ -8,77 +9,96 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class RealizationSplitTest {
 
-    private static String content(String file) throws IOException {
-        Scanner fileTemp = new Scanner(new FileReader(file));
+    private static String inString(String file) throws IOException {
+        Scanner myFile = new Scanner(new FileReader(file));
         StringBuilder result = new StringBuilder("");
-        while (fileTemp.hasNext()){
-            result.append(fileTemp.nextLine());
-            if (fileTemp.hasNext())
+        while (myFile.hasNext()){
+            result.append(myFile.nextLine());
+            if (myFile.hasNext())
                 result.append("\n");
         }
-        fileTemp.close();
+        myFile.close();
         return result.toString();
     }
 
 
     @Test
     void funL() throws IOException {
-        String[] arg = {"-d", "-l 10", "-o yes", "input/input.txt"};
-        Split.main(arg);
-        assertEquals(content("yes1.txt"), content("funLoutputs/l1.txt"));
-        assertEquals(content("yes2.txt"), content("funLoutputs/l2.txt"));
-        assertEquals(content("yes3.txt"), content("funLoutputs/l3.txt"));
-        assertEquals(content("yes4.txt"), content("funLoutputs/l4.txt"));
+        RealizationSplit.funL("input/input.txt", 10, "yes");
+        assertEquals(inString("yes1.txt"), inString("funLoutputs/l1.txt"));
+        assertEquals(inString("yes2.txt"), inString("funLoutputs/l2.txt"));
+        assertEquals(inString("yes3.txt"), inString("funLoutputs/l3.txt"));
+        assertEquals(inString("yes4.txt"), inString("funLoutputs/l4.txt"));
+        new File("yes1.txt").delete();
+        new File("yes2.txt").delete();
+        new File("yes3.txt").delete();
+        new File("yes4.txt").delete();
+
     }
 
     @Test
     void funC() throws IOException {
-        String[] arg = {"-d", "-c 350", "-o yes", "input/input.txt"};
-        Split.main(arg);
-        assertEquals(content("yes1.txt"), content("funLoutputs/c1.txt"));
-        assertEquals(content("yes2.txt"), content("funLoutputs/c2.txt"));
-        assertEquals(content("yes3.txt"), content("funLoutputs/c3.txt"));
-        assertEquals(content("yes4.txt"), content("funLoutputs/c4.txt"));
+        RealizationSplit.funC("input/input.txt", 350, "yes");
+        assertEquals(inString("yes1.txt"), inString("funLoutputs/c1.txt"));
+        assertEquals(inString("yes2.txt"), inString("funLoutputs/c2.txt"));
+        assertEquals(inString("yes3.txt"), inString("funLoutputs/c3.txt"));
+        assertEquals(inString("yes4.txt"), inString("funLoutputs/c4.txt"));
+        new File("yes1.txt").delete();
+        new File("yes2.txt").delete();
+        new File("yes3.txt").delete();
+        new File("yes4.txt").delete();
     }
 
     @Test
     void funN() throws IOException {
-        String[] arg = {"-d", "-n 4", "-o yes", "input/input.txt"};
-        Split.main(arg);
-        assertEquals(content("yes1.txt"), content("funLoutputs/l1.txt"));
-        assertEquals(content("yes2.txt"), content("funLoutputs/l2.txt"));
-        assertEquals(content("yes3.txt"), content("funLoutputs/l3.txt"));
-        assertEquals(content("yes4.txt"), content("funLoutputs/l4.txt"));
+        RealizationSplit.funN("input/input.txt", 4, "yes");
+        assertEquals(inString("yes1.txt"), inString("funLoutputs/l1.txt"));
+        assertEquals(inString("yes2.txt"), inString("funLoutputs/l2.txt"));
+        assertEquals(inString("yes3.txt"), inString("funLoutputs/l3.txt"));
+        assertEquals(inString("yes4.txt"), inString("funLoutputs/l4.txt"));
+        new File("yes1.txt").delete();
+        new File("yes2.txt").delete();
+        new File("yes3.txt").delete();
+        new File("yes4.txt").delete();
     }
 
     @Test
     void renameL() throws IOException {
-        String[] arg = {"-l 10", "-o yes", "input/input.txt"};
-        Split.main(arg);
-        assertEquals(content("yesaa.txt"), content("funLoutputs/l1.txt"));
-        assertEquals(content("yesab.txt"), content("funLoutputs/l2.txt"));
-        assertEquals(content("yesac.txt"), content("funLoutputs/l3.txt"));
-        assertEquals(content("yesad.txt"), content("funLoutputs/l4.txt"));
+        RealizationSplit.renameL("input/input.txt", 10, "yes");
+        assertEquals(inString("yesaa.txt"), inString("funLoutputs/l1.txt"));
+        assertEquals(inString("yesab.txt"), inString("funLoutputs/l2.txt"));
+        assertEquals(inString("yesac.txt"), inString("funLoutputs/l3.txt"));
+        assertEquals(inString("yesad.txt"), inString("funLoutputs/l4.txt"));
+        new File("yesaa.txt").delete();
+        new File("yesab.txt").delete();
+        new File("yesac.txt").delete();
+        new File("yesad.txt").delete();
     }
 
     @Test
     void renameC() throws IOException {
-        String[] arg = {"-c 350", "-o yes", "input/input.txt"};
-        Split.main(arg);
-        assertEquals(content("yesaa.txt"), content("funLoutputs/c1.txt"));
-        assertEquals(content("yesab.txt"), content("funLoutputs/c2.txt"));
-        assertEquals(content("yesac.txt"), content("funLoutputs/c3.txt"));
-        assertEquals(content("yesad.txt"), content("funLoutputs/c4.txt"));
+        RealizationSplit.renameC("input/input.txt", 350, "yes");
+        assertEquals(inString("yesaa.txt"), inString("funLoutputs/c1.txt"));
+        assertEquals(inString("yesab.txt"), inString("funLoutputs/c2.txt"));
+        assertEquals(inString("yesac.txt"), inString("funLoutputs/c3.txt"));
+        assertEquals(inString("yesad.txt"), inString("funLoutputs/c4.txt"));
+        new File("yesaa.txt").delete();
+        new File("yesab.txt").delete();
+        new File("yesac.txt").delete();
+        new File("yesad.txt").delete();
     }
 
     @Test
     void renameN() throws IOException {
-        String[] arg = {"-l 4", "-o yes", "input/input.txt"};
-        Split.main(arg);
-        assertEquals(content("yesaa.txt"), content("funLoutputs/l1.txt"));
-        assertEquals(content("yesab.txt"), content("funLoutputs/l2.txt"));
-        assertEquals(content("yesac.txt"), content("funLoutputs/l3.txt"));
-        assertEquals(content("yesad.txt"), content("funLoutputs/l4.txt"));
+        RealizationSplit.renameN("input/input.txt", 4, "yes");
+        assertEquals(inString("yesaa.txt"), inString("funLoutputs/l1.txt"));
+        assertEquals(inString("yesab.txt"), inString("funLoutputs/l2.txt"));
+        assertEquals(inString("yesac.txt"), inString("funLoutputs/l3.txt"));
+        assertEquals(inString("yesad.txt"), inString("funLoutputs/l4.txt"));
+        new File("yesaa.txt").delete();
+        new File("yesab.txt").delete();
+        new File("yesac.txt").delete();
+        new File("yesad.txt").delete();
     }
 
 }

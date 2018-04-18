@@ -59,13 +59,13 @@ class RealizationSplit {
         rename(outputName);
     }
 
-    static void renameC(String file, int sizeInLines, String outputName) throws IOException {
-        funC(file, sizeInLines, outputName);
+    static void renameC(String file, int sizeInChars, String outputName) throws IOException {
+        funC(file, sizeInChars, outputName);
         rename(outputName);
     }
 
-    static void renameN(String file, int sizeInLines, String outputName) throws IOException {
-        funN(file, sizeInLines, outputName);
+    static void renameN(String file, int countSize, String outputName) throws IOException {
+        funN(file, countSize, outputName);
         rename(outputName);
     }
 
@@ -84,7 +84,6 @@ class RealizationSplit {
             if (littleFile.renameTo(renamedFile)) {
                 count++;
                 littleFile = new File(outputName + count + ".txt");
-
             }
         }
     }
