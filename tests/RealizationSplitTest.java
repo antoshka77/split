@@ -19,13 +19,15 @@ class RealizationSplitTest {
         fileTemp.close();
         return result.toString();
     }
+
+
     @Test
     void funL() throws IOException {
         String[] arg = {"-d", "-l 10", "-o yes", "input/input.txt"};
         Split.main(arg);
         assertEquals(content("yes1.txt"), content("funLoutputs/l1.txt"));
         assertEquals(content("yes2.txt"), content("funLoutputs/l2.txt"));
-        assertEquals(content("yes3.txt"), content("futLoutputs/l3.txt"));
+        assertEquals(content("yes3.txt"), content("funLoutputs/l3.txt"));
         assertEquals(content("yes4.txt"), content("funLoutputs/l4.txt"));
     }
 
@@ -35,7 +37,7 @@ class RealizationSplitTest {
         Split.main(arg);
         assertEquals(content("yes1.txt"), content("funLoutputs/c1.txt"));
         assertEquals(content("yes2.txt"), content("funLoutputs/c2.txt"));
-        assertEquals(content("yes3.txt"), content("futLoutputs/c3.txt"));
+        assertEquals(content("yes3.txt"), content("funLoutputs/c3.txt"));
         assertEquals(content("yes4.txt"), content("funLoutputs/c4.txt"));
     }
 
@@ -45,7 +47,7 @@ class RealizationSplitTest {
         Split.main(arg);
         assertEquals(content("yes1.txt"), content("funLoutputs/l1.txt"));
         assertEquals(content("yes2.txt"), content("funLoutputs/l2.txt"));
-        assertEquals(content("yes3.txt"), content("futLoutputs/l3.txt"));
+        assertEquals(content("yes3.txt"), content("funLoutputs/l3.txt"));
         assertEquals(content("yes4.txt"), content("funLoutputs/l4.txt"));
     }
 
@@ -55,7 +57,7 @@ class RealizationSplitTest {
         Split.main(arg);
         assertEquals(content("yesaa.txt"), content("funLoutputs/l1.txt"));
         assertEquals(content("yesab.txt"), content("funLoutputs/l2.txt"));
-        assertEquals(content("yesac.txt"), content("futLoutputs/l3.txt"));
+        assertEquals(content("yesac.txt"), content("funLoutputs/l3.txt"));
         assertEquals(content("yesad.txt"), content("funLoutputs/l4.txt"));
     }
 
@@ -65,7 +67,7 @@ class RealizationSplitTest {
         Split.main(arg);
         assertEquals(content("yesaa.txt"), content("funLoutputs/c1.txt"));
         assertEquals(content("yesab.txt"), content("funLoutputs/c2.txt"));
-        assertEquals(content("yesac.txt"), content("futLoutputs/c3.txt"));
+        assertEquals(content("yesac.txt"), content("funLoutputs/c3.txt"));
         assertEquals(content("yesad.txt"), content("funLoutputs/c4.txt"));
     }
 
@@ -75,7 +77,7 @@ class RealizationSplitTest {
         Split.main(arg);
         assertEquals(content("yesaa.txt"), content("funLoutputs/l1.txt"));
         assertEquals(content("yesab.txt"), content("funLoutputs/l2.txt"));
-        assertEquals(content("yesac.txt"), content("futLoutputs/l3.txt"));
+        assertEquals(content("yesac.txt"), content("funLoutputs/l3.txt"));
         assertEquals(content("yesad.txt"), content("funLoutputs/l4.txt"));
     }
 
