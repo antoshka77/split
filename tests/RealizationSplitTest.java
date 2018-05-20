@@ -21,10 +21,9 @@ class RealizationSplitTest {
         return result.toString();
     }
 
-
     @Test
     void funL() throws IOException {
-        RealizationSplit.funL("input/input.txt", 10, "yes");
+        RealizationSplit.funL("input/input.txt", 10, "yes", Filename.Digit);
         assertEquals(inString("yes1.txt"), inString("outputFiles/l1.txt"));
         assertEquals(inString("yes2.txt"), inString("outputFiles/l2.txt"));
         assertEquals(inString("yes3.txt"), inString("outputFiles/l3.txt"));
@@ -38,7 +37,7 @@ class RealizationSplitTest {
 
     @Test
     void funC() throws IOException {
-        RealizationSplit.funC("input/input.txt", 350, "yes");
+        RealizationSplit.funC("input/input.txt", 350, "yes", Filename.Digit);
         assertEquals(inString("yes1.txt"), inString("outputFiles/c1.txt"));
         assertEquals(inString("yes2.txt"), inString("outputFiles/c2.txt"));
         assertEquals(inString("yes3.txt"), inString("outputFiles/c3.txt"));
@@ -51,7 +50,7 @@ class RealizationSplitTest {
 
     @Test
     void funN() throws IOException {
-        RealizationSplit.funN("input/input.txt", 4, "yes");
+        RealizationSplit.funN("input/input.txt", 4, "yes", Filename.Digit);
         assertEquals(inString("yes1.txt"), inString("outputFiles/l1.txt"));
         assertEquals(inString("yes2.txt"), inString("outputFiles/l2.txt"));
         assertEquals(inString("yes3.txt"), inString("outputFiles/l3.txt"));
@@ -63,42 +62,43 @@ class RealizationSplitTest {
     }
 
     @Test
-    void renameL() throws IOException {
-        RealizationSplit.renameL("input/input.txt", 10, "yes");
-        assertEquals(inString("yesaa.txt"), inString("outputFiles/l1.txt"));
-        assertEquals(inString("yesab.txt"), inString("outputFiles/l2.txt"));
-        assertEquals(inString("yesac.txt"), inString("outputFiles/l3.txt"));
-        assertEquals(inString("yesad.txt"), inString("outputFiles/l4.txt"));
-        new File("yesaa.txt").delete();
-        new File("yesab.txt").delete();
-        new File("yesac.txt").delete();
-        new File("yesad.txt").delete();
+    void funLLetter() throws IOException {
+        RealizationSplit.funL("input/input.txt", 10, "yes", Filename.Letter);
+        assertEquals(inString("yesa.txt"), inString("outputFiles/l1.txt"));
+        assertEquals(inString("yesb.txt"), inString("outputFiles/l2.txt"));
+        assertEquals(inString("yesc.txt"), inString("outputFiles/l3.txt"));
+        assertEquals(inString("yesd.txt"), inString("outputFiles/l4.txt"));
+        new File("yesa.txt").delete();
+        new File("yesb.txt").delete();
+        new File("yesc.txt").delete();
+        new File("yesd.txt").delete();
+
     }
 
     @Test
-    void renameC() throws IOException {
-        RealizationSplit.renameC("input/input.txt", 350, "yes");
-        assertEquals(inString("yesaa.txt"), inString("outputFiles/c1.txt"));
-        assertEquals(inString("yesab.txt"), inString("outputFiles/c2.txt"));
-        assertEquals(inString("yesac.txt"), inString("outputFiles/c3.txt"));
-        assertEquals(inString("yesad.txt"), inString("outputFiles/c4.txt"));
-        new File("yesaa.txt").delete();
-        new File("yesab.txt").delete();
-        new File("yesac.txt").delete();
-        new File("yesad.txt").delete();
+    void funCLetter() throws IOException {
+        RealizationSplit.funC("input/input.txt", 350, "yes", Filename.Letter);
+        assertEquals(inString("yesa.txt"), inString("outputFiles/c1.txt"));
+        assertEquals(inString("yesb.txt"), inString("outputFiles/c2.txt"));
+        assertEquals(inString("yesc.txt"), inString("outputFiles/c3.txt"));
+        assertEquals(inString("yesd.txt"), inString("outputFiles/c4.txt"));
+        new File("yesa.txt").delete();
+        new File("yesb.txt").delete();
+        new File("yesc.txt").delete();
+        new File("yesd.txt").delete();
     }
 
     @Test
-    void renameN() throws IOException {
-        RealizationSplit.renameN("input/input.txt", 4, "yes");
-        assertEquals(inString("yesaa.txt"), inString("outputFiles/l1.txt"));
-        assertEquals(inString("yesab.txt"), inString("outputFiles/l2.txt"));
-        assertEquals(inString("yesac.txt"), inString("outputFiles/l3.txt"));
-        assertEquals(inString("yesad.txt"), inString("outputFiles/l4.txt"));
-        new File("yesaa.txt").delete();
-        new File("yesab.txt").delete();
-        new File("yesac.txt").delete();
-        new File("yesad.txt").delete();
+    void funNLetter() throws IOException {
+        RealizationSplit.funN("input/input.txt", 4, "yes", Filename.Letter);
+        assertEquals(inString("yesa.txt"), inString("outputFiles/l1.txt"));
+        assertEquals(inString("yesb.txt"), inString("outputFiles/l2.txt"));
+        assertEquals(inString("yesc.txt"), inString("outputFiles/l3.txt"));
+        assertEquals(inString("yesd.txt"), inString("outputFiles/l4.txt"));
+        new File("yesa.txt").delete();
+        new File("yesb.txt").delete();
+        new File("yesc.txt").delete();
+        new File("yesd.txt").delete();
     }
 
 }

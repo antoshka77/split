@@ -41,35 +41,20 @@ public class Split {
             parser.printUsage(System.err);
         }
 
-        if (inputFile == null) {
-            System.err.println("Incorrect argument format");
-            parser.printUsage(System.err);
-        } else {
+        String ofile;
+        if (basicOutputName == null) ofile = "x";
+        else if (Objects.equals(basicOutputName, "-")) ofile = inputFile.split(".txt")[0];
+        else ofile = basicOutputName;
 
-            String ofile;
-            if (basicOutputName == null) ofile = "x";
-            else if (Objects.equals(basicOutputName, "-")) ofile = inputFile.split(".txt")[0];
-            else ofile = basicOutputName;
+        Filename filenameGenerator = whatIsName ? Filename.Digit : Filename.Letter;
 
-            if (whatIsName) {
-                if (sizeInLines != -1) RealizationSplit.funL(inputFile, sizeInLines, ofile);
+        if (sizeInLines != -1) RealizationSplit.funL(inputFile, sizeInLines, ofile, filenameGenerator);
 
-                if (sizeInChars != -1) RealizationSplit.funC(inputFile, sizeInChars, ofile);
+        if (sizeInChars != -1) RealizationSplit.funC(inputFile, sizeInChars, ofile, filenameGenerator);
 
-                if (countFiles != -1) RealizationSplit.funN(inputFile, countFiles, ofile);
+        if (countFiles != -1) RealizationSplit.funN(inputFile, countFiles, ofile, filenameGenerator);
 
-                if ((sizeInChars == -1) && (sizeInLines == -1) && (countFiles == -1))
-                    RealizationSplit.funL(inputFile, 100, ofile);
-            } else {
-                if (sizeInLines != -1) RealizationSplit.renameL(inputFile, sizeInLines, ofile);
-
-                if (sizeInChars != -1) RealizationSplit.renameC(inputFile, sizeInChars, ofile);
-
-                if (countFiles != -1) RealizationSplit.renameN(inputFile, countFiles, ofile);
-
-                if ((sizeInChars == -1) && (sizeInLines == -1) && (countFiles == -1))
-                    RealizationSplit.renameL(inputFile, 100, ofile);
-            }
-        }
+        if ((sizeInChars == -1) && (sizeInLines == -1) && (countFiles == -1))
+            RealizationSplit.funL(inputFile, 100, ofile, filenameGenerator);
     }
 }

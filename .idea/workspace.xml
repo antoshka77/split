@@ -8,6 +8,19 @@
   <component name="ChangeListManager">
     <list default="true" id="f4119e34-057a-4b0e-9fc3-e46d25974bf1" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../split/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../split/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../split/input/input.txt" afterPath="$PROJECT_DIR$/../split/input/input.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../split/outputFiles/c1.txt" afterPath="$PROJECT_DIR$/../split/outputFiles/c1.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../split/outputFiles/c2.txt" afterPath="$PROJECT_DIR$/../split/outputFiles/c2.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../split/outputFiles/c3.txt" afterPath="$PROJECT_DIR$/../split/outputFiles/c3.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../split/outputFiles/c4.txt" afterPath="$PROJECT_DIR$/../split/outputFiles/c4.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../split/outputFiles/l1.txt" afterPath="$PROJECT_DIR$/../split/outputFiles/l1.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../split/outputFiles/l2.txt" afterPath="$PROJECT_DIR$/../split/outputFiles/l2.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../split/outputFiles/l3.txt" afterPath="$PROJECT_DIR$/../split/outputFiles/l3.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../split/outputFiles/l4.txt" afterPath="$PROJECT_DIR$/../split/outputFiles/l4.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../split/split.iml" afterPath="$PROJECT_DIR$/../split/split.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../split/src/META-INF/MANIFEST.MF" afterPath="$PROJECT_DIR$/../split/src/META-INF/MANIFEST.MF" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../split/src/RealizationSplit.java" afterPath="$PROJECT_DIR$/../split/src/RealizationSplit.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../split/src/Split.java" afterPath="$PROJECT_DIR$/../split/src/Split.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../split/tests/RealizationSplitTest.java" afterPath="$PROJECT_DIR$/../split/tests/RealizationSplitTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/../split/out/" />
@@ -19,12 +32,44 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="RealizationSplitTest.java" pinned="false" current-in-tab="true">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="Split.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../split/src/Split.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Filename.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../split/src/Filename.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="44" lean-forward="false" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="44" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RealizationSplit.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../split/src/RealizationSplit.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="22" column="5" lean-forward="false" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RealizationSplitTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../split/tests/RealizationSplitTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1207">
-              <caret line="78" column="39" lean-forward="false" selection-start-line="78" selection-start-column="39" selection-end-line="78" selection-end-column="39" />
+            <state relative-caret-position="884">
+              <caret line="59" column="38" lean-forward="false" selection-start-line="59" selection-start-column="38" selection-end-line="59" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -35,8 +80,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -56,7 +101,6 @@
         <option value="$PROJECT_DIR$/../split/input1.txt" />
         <option value="$PROJECT_DIR$/../split/x1.txt" />
         <option value="$PROJECT_DIR$/../split/input1aa.txt" />
-        <option value="$PROJECT_DIR$/../split/src/Split.java" />
         <option value="$PROJECT_DIR$/../split/input.txt" />
         <option value="$PROJECT_DIR$/../split/l1.txt" />
         <option value="$PROJECT_DIR$/../split/l2.txt" />
@@ -66,8 +110,9 @@
         <option value="$PROJECT_DIR$/../split/c2.txt" />
         <option value="$PROJECT_DIR$/../split/c3.txt" />
         <option value="$PROJECT_DIR$/../split/c4.txt" />
-        <option value="$PROJECT_DIR$/../split/src/RealizationSplit.java" />
         <option value="$PROJECT_DIR$/../split/tests/RealizationSplitTest.java" />
+        <option value="$PROJECT_DIR$/../split/src/RealizationSplit.java" />
+        <option value="$PROJECT_DIR$/../split/src/Split.java" />
       </list>
     </option>
   </component>
@@ -93,6 +138,8 @@
     </navigator>
     <panes>
       <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -100,23 +147,16 @@
               <item name="split" type="b2602c69:ProjectViewProjectNode" />
               <item name="split" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="split" type="b2602c69:ProjectViewProjectNode" />
-              <item name="split" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scratches" />
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$USER_HOME$/Desktop/Downloads/args4j-2.33.jar!/" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
@@ -419,13 +459,17 @@
       <option name="project" value="LOCAL" />
       <updated>1524071033501</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="rewrite tests">
+      <created>1524421752549</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1524421752549</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="RealizationSplitTest - 2018.04.22 at 21h 18m 48s.xml">
-      <configuration name="RealizationSplitTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="RealizationSplitTest - 2018.04.22 at 21h 26m 37s.xml">
       <configuration name="RealizationSplitTest" configurationId="JUnit" />
     </history-entry>
@@ -441,17 +485,20 @@
     <history-entry file="RealizationSplitTest - 2018.04.22 at 21h 28m 22s.xml">
       <configuration name="RealizationSplitTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RealizationSplitTest_funL - 2018.04.22 at 21h 21m 30s.xml">
-      <configuration name="RealizationSplitTest.funL" configurationId="JUnit" />
+    <history-entry file="RealizationSplitTest - 2018.04.22 at 21h 30m 35s.xml">
+      <configuration name="RealizationSplitTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RealizationSplitTest - 2018.04.22 at 21h 35m 34s.xml">
+      <configuration name="RealizationSplitTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RealizationSplitTest - 2018.04.22 at 21h 42m 40s.xml">
+      <configuration name="RealizationSplitTest" configurationId="JUnit" />
     </history-entry>
     <history-entry file="RealizationSplitTest_funL - 2018.04.22 at 21h 26m 06s.xml">
       <configuration name="RealizationSplitTest.funL" configurationId="JUnit" />
     </history-entry>
     <history-entry file="RealizationSplitTest_renameC - 2018.04.22 at 21h 27m 21s.xml">
       <configuration name="RealizationSplitTest.renameC" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RealizationSplitTest_renameN - 2018.04.18 at 19h 53m 13s.xml">
-      <configuration name="RealizationSplitTest.renameN" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -460,19 +507,17 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38485804" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33596215" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16764276" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.08044164" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15959005" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -483,7 +528,9 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.08044164" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -491,7 +538,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="rewrite" />
-    <option name="LAST_COMMIT_MESSAGE" value="rewrite" />
+    <MESSAGE value="rewrite tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="rewrite tests" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -500,9 +548,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../split/x6.txt" />
-    <entry file="file://$PROJECT_DIR$/../split/x4.txt" />
-    <entry file="file://$PROJECT_DIR$/../split/x3.txt" />
     <entry file="file://$PROJECT_DIR$/../split/x2.txt" />
     <entry file="file://$PROJECT_DIR$/../split/x5.txt" />
     <entry file="file://$PROJECT_DIR$/../split/xag.txt" />
@@ -602,27 +647,38 @@
     <entry file="file://$PROJECT_DIR$/../split/yesab.txt" />
     <entry file="file://$PROJECT_DIR$/../split/yesac.txt" />
     <entry file="file://$PROJECT_DIR$/../split/yesaa.txt" />
+    <entry file="file://$PROJECT_DIR$/../split/src/EnglishCheckers.java" />
+    <entry file="file://$PROJECT_DIR$/../split/src/g.java" />
+    <entry file="file://$PROJECT_DIR$/../split/tests/RealizationSplitTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="884">
+          <caret line="59" column="38" lean-forward="false" selection-start-line="59" selection-start-column="38" selection-end-line="59" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/../split/src/RealizationSplit.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="69" column="5" lean-forward="true" selection-start-line="69" selection-start-column="5" selection-end-line="69" selection-end-column="5" />
+        <state relative-caret-position="374">
+          <caret line="22" column="5" lean-forward="false" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../split/src/Split.java">
+    <entry file="file://$PROJECT_DIR$/../split/src/Filename.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="44" column="60" lean-forward="true" selection-start-line="44" selection-start-column="60" selection-end-line="44" selection-end-column="60" />
+        <state relative-caret-position="119">
+          <caret line="7" column="44" lean-forward="false" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="44" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../split/tests/RealizationSplitTest.java">
+    <entry file="file://$PROJECT_DIR$/../split/src/Split.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1207">
-          <caret line="78" column="39" lean-forward="false" selection-start-line="78" selection-start-column="39" selection-end-line="78" selection-end-column="39" />
+        <state relative-caret-position="34">
+          <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
           <folding />
         </state>
       </provider>
