@@ -39,6 +39,7 @@ public class Split {
             System.err.println("java -jar split.jar -d -c num -o basicOutputName inputFileName");
             System.err.println("java -jar split.jar -d -n num -o basicOutputName inputFileName");
             parser.printUsage(System.err);
+            return;
         }
 
         String ofile;
